@@ -11,7 +11,7 @@ export const ALPHABET_LIST_DEBOUNCE = debounce(
   async (value: string): Promise<Option[]> => {
     return (
       ALPHABET
-        // .filter((alphabet) => alphabet === value.toUpperCase())
+        .filter((alphabet) => alphabet === value.toUpperCase())
         .map((letter) => ({
           value: letter,
           label: letter,

@@ -40,8 +40,9 @@ export const DropdownIndicator = (props: DropdownIndicatorProps) => {
 		<ComponentSelect.DropdownIndicator {...props}>
 			<ChevronDownIcon
 				className={cn(
-					"h-8 w-8 shrink-0  transition-transform duration-500 text-gray-700",  
-					props.isFocused ? "rotate-180" : "rotate-0" 
+					"h-8 w-8 shrink-0  transition-transform duration-500 text-[#292B37] chevron-icon",  
+					props.isFocused ? "rotate-180" : "rotate-0", 
+          props.isFocused && "text-orange-500"
 				)}
 				strokeWidth={1.5}
 			/>

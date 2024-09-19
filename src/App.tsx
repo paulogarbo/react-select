@@ -13,6 +13,7 @@ export function App(): React.ReactElement {
             defaultOptions
             loadOptions={ALPHABET_LIST_DEBOUNCE}
             isMulti
+            isSearchable
             className="w-full max-w-sm"
           />
         </div>
